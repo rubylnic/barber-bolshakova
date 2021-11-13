@@ -1,0 +1,47 @@
+.socials {
+  display: flex;
+
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 47px;
+
+  gap: 25px;
+}
+
+.socials__link {
+  display: flex;
+
+  width: 67px;
+  height: 67px;
+
+  transition: all 0.3s ease-in;
+
+  border-radius: 50%;
+  background: $light-blue;
+
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:focus {
+    background: $light-blue;
+  }
+
+  &:nth-of-type(2) {
+    background: #d3e5ff;
+
+    &:hover,
+    &:focus {
+      background: $light-blue;
+    }
+  }
+
+  &:nth-of-type(3) {
+    background: #d3e5ff;
+
+    &:hover,
+    &:focus {
+      background: $light-blue;
+    }
+  }
+}

@@ -35,6 +35,17 @@
 })();
 'use strict';
 (function() {
+  let tel = document.querySelector('.tel');
+  if (tel) {
+    var phoneMask = IMask(
+      document.querySelector('.tel'), {
+        mask: '+{7}(000)000-00-00'
+      });
+  }
+})();
+
+'use strict';
+(function() {
   //кнопка открытия - <div><a href="#" class="(классы для стилей) open-modal" data-modal="1" и т.д. (data-modal="2" ...)></div>
 
   //сами модалки <section class="modal modal--closed" data-modal-content="1"> и т.д. (data-modal-сontent="2" (соответствует кнопке открытия))>
@@ -117,6 +128,24 @@
   };
 })();
 
+'use strict';
+(function() {
+  const openBtn = document.querySelector('.open-nav');
+  const closeBtn = document.querySelector('.close-nav');
+  const nav = document.querySelector('.nav');
+  if (openBtn) {
+    openBtn.addEventListener('click', function() {
+      nav.classList.remove('hidden');
+      this.classList.add('hidden');
+      closeBtn.classList.remove('hidden');
+    })
+    closeBtn.addEventListener('click', function() {
+      nav.classList.add('hidden');
+      this.classList.add('hidden');
+      openBtn.classList.remove('hidden');
+    })
+  }
+})();
 'use strict';
 (function() {
 

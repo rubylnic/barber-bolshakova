@@ -9,6 +9,10 @@
   gap: 49px;
 }
 
+.services__title {
+  margin-bottom: 70px;
+}
+
 .services__item {
   padding: 51px 41px 72px 41px;
 
@@ -57,11 +61,37 @@
 
 .services__text {
   text-align: center;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
 
   font-size: 25px;
   line-height: 37.65px;
 
   opacity: 0.65;
   color: rgba(21, 52, 97, 1);
+}
+
+@media(max-width:1200px) {
+  .services {
+    margin-bottom: 100px;
+  }
+
+  .services__list {
+    display: grid;
+
+    grid-template-columns: 1fr;
+  }
+
+  .services__item {
+    padding: 20px;
+  }
+
+  .services__subtitle {
+    margin-bottom: 1em;
+
+    font-size: 25px;
+  }
+
+  .services__icon {
+    margin-bottom: 20px;
+  }
 }

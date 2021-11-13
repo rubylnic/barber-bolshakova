@@ -22,6 +22,24 @@
   .checkbox-text {
     font-size: 14px;
   }
+
+  .label {
+    display: block;
+
+    margin-bottom: 20px;
+  }
+
+  .input {
+    width: 100%;
+    padding: 10px;
+
+    border: 1px solid $blue;
+    border-radius: 5px;
+  }
+
+  .button {
+    margin: 0 auto;
+  }
 }
 
 .modal__overlay {
@@ -50,10 +68,11 @@
   width: 95%;
   max-width: 561px;
   margin: 0 auto;
-  padding: 47px 16px;
+  padding: 60px;
 
   animation: bounce 1s;
 
+  border-radius: 30px;
   background-color: $white;
 
   flex-shrink: 0;

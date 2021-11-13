@@ -1,0 +1,26 @@
+.footer {
+  padding-bottom: 98px;
+
+  & > .container {
+    border-bottom: 1px solid #99baed;
+  }
+}
+
+.footer__logo {
+  display: block;
+
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 36px;
+}
+
+.footer__text {
+  max-width: 526px;
+  margin: 0 auto;
+  margin-bottom: 47px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  font-size: 25px;
+}

@@ -116,9 +116,11 @@ input[type='radio'].visually-hidden {
   padding: 23px 41px;
 
   cursor: pointer;
+  transition: all 0.3s ease-in;
   text-align: center;
   text-decoration: none;
   letter-spacing: 0.05px;
+  text-transform: capitalize;
 
   font-size: 20px;
   font-weight: 700;
@@ -164,4 +166,69 @@ input[type='radio'].visually-hidden {
 
 .lg-backdrop.in {
   opacity: 0.7 !important;
+}
+
+.open-nav {
+  display: none;
+
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+
+  border: none;
+  background: transparent;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.logo {
+  transition: all 0.3s ease-in;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.close-nav {
+  display: none;
+
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+
+  border: none;
+  background: transparent;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+@media(max-width:1200px) {
+  .close-nav,
+  .open-nav {
+    display: block;
+
+    svg {
+      stroke: $light-blue;
+    }
+
+    &.hidden {
+      display: none;
+    }
+  }
+
+  .close-nav {
+    z-index: 2;
+  }
+
+  .title {
+    margin-bottom: 0.8em;
+
+    font-size: 40px;
+    line-height: 1.5em;
+  }
 }

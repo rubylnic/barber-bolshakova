@@ -1,3 +1,7 @@
+.gallery {
+  margin-bottom: 172px;
+}
+
 .gallery__container {
   display: grid;
 
@@ -40,5 +44,21 @@
     height: 100%;
 
     object-fit: cover;
+  }
+}
+
+.gallery__button {
+  margin: 0 auto;
+}
+
+@media(max-width:500px) {
+  .gallery {
+    margin-bottom: 50px;
+  }
+
+  .gallery__container {
+    margin-bottom: 30px;
+
+    grid-template-columns: 1fr 1fr;
   }
 }
