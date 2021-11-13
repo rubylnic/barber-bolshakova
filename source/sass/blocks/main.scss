@@ -1,0 +1,22 @@
+.main {
+  padding-top: 165px;
+  padding-bottom: 315px;
+
+  background: url('../img/main.jpg') 103% 60px no-repeat;
+
+  .paragraph {
+    &:last-of-type {
+      margin-bottom: 97px;
+    }
+  }
+}
+
+.main__title {
+  max-width: 100%;
+
+  text-align: start;
+}
+
+.main__text {
+  max-width: 576px;
+}

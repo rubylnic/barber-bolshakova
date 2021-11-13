@@ -1,22 +1,5 @@
 'use strict';
 (function() {
-
-  let initializeGallery = function() {
-    let galleries = document.querySelectorAll('.lightgallery');
-    for (let i = 0; i < galleries.length; i++) {
-      lightGallery(galleries[i], {
-        thumbnail: true,
-        share: false,
-        download: false,
-      })
-    }
-  }
-
-  setTimeout(initializeGallery, 0);
-
-})();
-'use strict';
-(function() {
   //кнопка открытия - <div><a href="#" class="(классы для стилей) open-modal" data-modal="1" и т.д. (data-modal="2" ...)></div>
 
   //сами модалки <section class="modal modal--closed" data-modal-content="1"> и т.д. (data-modal-сontent="2" (соответствует кнопке открытия))>
@@ -97,28 +80,4 @@
     };
 
   };
-})();
-
-'use strict';
-(function() {
-
-  const faqSwiper = new Swiper('.faq__container', {
-    slidesPerView: 1,
-    loop: true,
-    spaceBetween: 24,
-
-    breakpoints: {
-      500: {
-        slidesPerView: 2,
-      },
-      700: {
-        slidesPerView: 3,
-      },
-
-      1024: {
-
-        slidesPerView: 4,
-      }
-    },
-  });
 })();

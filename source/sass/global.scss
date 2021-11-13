@@ -69,25 +69,73 @@ input[type='radio'].visually-hidden {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
 .title {
+  max-width: 400px;
   margin: 0;
+  margin: 0 auto;
   margin-bottom: 32px;
+  margin-bottom: 80px;
 
-  font-size: 40px;
+  text-align: center;
+  text-transform: capitalize;
+
+  font-size: 75px;
   font-weight: 600;
-  line-height: 48px;
+  font-weight: 700;
+  line-height: 100.2px;
+
+  span {
+    color: $yellow;
+  }
 }
 
 .subtitle {
   margin: 0;
   margin-bottom: 4px;
 
-  font-size: 20px;
+  letter-spacing: 3%;
+
+  font-size: 45px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 52.47px;
+
+  color: rgba(22, 53, 97, 1);
+}
+
+.button {
+  display: block;
+
+  width: fit-content;
+  padding: 23px 41px;
+
+  text-align: c;
+  text-decoration: none;
+  letter-spacing: 5%;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+
+  color: $white;
+  border-radius: 20px;
+  background-color: $light-blue;
+}
+
+.paragraph {
+  margin-bottom: 48px;
+
+  letter-spacing: 3%;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.lg-backdrop.in {
+  opacity: 0.7 !important;
 }

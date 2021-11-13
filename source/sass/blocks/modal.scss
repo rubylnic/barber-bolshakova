@@ -1,0 +1,308 @@
+.modal {
+  .modal__overlay {
+    transition: opacity 0.3s ease-in;
+  }
+
+  &--closed {
+    .modal__overlay {
+      position: absolute;
+      right: auto;
+      left: -200%;
+
+      opacity: 0;
+    }
+  }
+
+  .search-form {
+    width: 100%;
+    max-width: 726px;
+    margin-bottom: 20px;
+  }
+
+  .checkbox-text {
+    font-size: 14px;
+  }
+}
+
+.modal__overlay {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+
+  min-width: 320px;
+  padding: 30px 0;
+
+  opacity: 1;
+  background-color: rgba(24, 22, 22, 0.5);
+
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__container {
+  position: absolute;
+
+  width: 95%;
+  max-width: 561px;
+  margin: 0 auto;
+  padding: 47px 16px;
+
+  animation: bounce 1s;
+
+  background-color: $white;
+
+  flex-shrink: 0;
+}
+
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  cursor: pointer;
+
+  border: none;
+  background-color: transparent;
+
+  svg {
+    stroke: #cacccf;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.modal__login {
+  max-width: 100%;
+  margin-bottom: 20px;
+
+  cursor: pointer;
+}
+
+.modal__signup {
+  cursor: pointer;
+}
+
+.modal__signup {
+  display: flex;
+
+  color: #52575c;
+
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+
+  button {
+    cursor: pointer;
+
+    color: red;
+    border: none;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      color: green;
+    }
+  }
+}
+
+@media(min-width:$widthDesktop) {
+  .modal__container {
+    padding: 40px 66px;
+  }
+}
+
+.modal__title {
+  display: flex;
+
+  margin-bottom: 25px;
+
+  font-size: 24px;
+  line-height: 130%;
+
+  align-items: center;
+  gap: 10px;
+
+  svg {
+    fill: none;
+  }
+}
+
+.modal__submit {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  color: red;
+  border: 1px solid red;
+  background-color: white;
+
+  &:hover,
+  &:focus {
+    color: green;
+    border-color: green;
+  }
+}
+
+.modal-size__table {
+  margin-bottom: 30px;
+
+  border-collapse: collapse;
+
+  td {
+    padding: 8px 10px;
+
+    line-height: 130%;
+
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  tr:nth-of-type(2n) {
+    td {
+      background-color: #f9f9fa;
+    }
+  }
+}
+
+.modal-size__header {
+  font-weight: 500;
+
+  border-bottom: 1px solid #f9f9fa;
+
+  td {
+    padding: 29px 0;
+  }
+}
+
+.modal-size__count {
+  display: flex;
+
+  align-items: center;
+  gap: 4px;
+}
+
+.modal-size__count-number {
+  width: 52px;
+  padding: 7px;
+
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 130%;
+
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+}
+
+.modal__city {
+  margin-bottom: 40px;
+
+  font-size: 18px;
+}
+
+.modal__close-modal,
+.modal__open-modal {
+  width: 188px;
+  padding: 12px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+
+  color: $white;
+  border: 1px solid red;
+  background-color: red;
+}
+
+.modal__close-modal {
+  &:hover,
+  &:focus {
+    color: red;
+    background-color: white;
+  }
+}
+
+.modal-choose-city__letter {
+  display: block;
+
+  margin-bottom: 15px;
+
+  font-size: 16px;
+
+  color: #a0a4a8;
+}
+
+.modal-sign-up {
+  .modal__container {
+    max-width: 518px;
+  }
+}
+
+@media(min-width:500px) {
+  .modal-choose-city__list {
+    columns: 2;
+  }
+}
+
+@media(min-width:$widthTablet) {
+  .modal-choose-city__list {
+    columns: 3;
+  }
+}
+
+@media(min-width:$widthDesktop) {
+  .modal .search-form {
+    margin-bottom: 0;
+  }
+
+  .modal-choose-city {
+    z-index: 1;
+
+    .modal__container {
+      padding: 40px 0 70px 0;
+    }
+  }
+
+  .modal-choose-city__header {
+    display: flex;
+
+    margin-bottom: 40px;
+
+    align-items: center;
+    gap: 125px;
+
+    .modal__title {
+      margin-bottom: 0;
+    }
+  }
+
+  .modal-choose-city__list {
+    columns: 4;
+  }
+
+  .modal__close-modal.close-modal {
+    margin-right: 10px;
+  }
+
+  .modal-sign-up {
+    .modal__container {
+      padding: 40px;
+    }
+
+    .modal__login {
+      margin-bottom: 30px;
+    }
+  }
+}

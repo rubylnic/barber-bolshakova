@@ -1,0 +1,23 @@
+.history {
+  padding-bottom: 334px;
+
+  background: url('../img/history.jpg') left 0 no-repeat;
+
+  .paragraph {
+    &:last-of-type {
+      margin-bottom: 108px;
+    }
+  }
+}
+
+.history__text {
+  max-width: 526px;
+  margin-left: auto;
+  padding-top: 80px;
+}
+
+.history__title {
+  max-width: 100%;
+
+  text-align: start;
+}

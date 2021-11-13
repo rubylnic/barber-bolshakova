@@ -1,0 +1,44 @@
+.gallery__container {
+  display: grid;
+
+  margin-bottom: 77px;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 37px;
+}
+
+.gallery__img {
+  position: relative;
+
+  display: block;
+
+  aspect-ratio: 1/1;
+
+  &:hover {
+    &::before {
+      opacity: 0;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+    transition: all 0.3s ease-in;
+
+    opacity: 1;
+    background: rgba(82, 150, 255, 0.35);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+}
