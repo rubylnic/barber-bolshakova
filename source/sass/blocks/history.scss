@@ -1,7 +1,9 @@
 .history {
-  padding-bottom: 334px;
+  margin-bottom: 200px;
+  padding-bottom: 100px;
 
-  background: url('../img/history.jpg') left 0 no-repeat;
+  background: url('../img/history.jpg') 20% 0 no-repeat;
+  background-size: 38% auto;
 
   .paragraph {
     &:last-of-type {

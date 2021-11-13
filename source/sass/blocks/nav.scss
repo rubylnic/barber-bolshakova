@@ -1,0 +1,20 @@
+.nav {
+  display: flex;
+
+  gap: 34px;
+}
+
+.nav__link {
+  padding: 63px 14px 8px 14px;
+
+  text-decoration: none;
+
+  color: rgba(22, 53, 97, 1);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  &:hover {
+    color: $white;
+    background-color: $light-blue;
+  }
+}

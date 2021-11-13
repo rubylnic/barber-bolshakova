@@ -17,6 +17,24 @@
 })();
 'use strict';
 (function() {
+  var header = document.querySelector('.header');
+  var main = document.querySelector('main');
+  if (header) {
+    var sticky = header.offsetHeight;
+    window.addEventListener('scroll', function() {
+
+      if (window.pageYOffset > sticky) {
+        header.classList.add("header--scroll");
+        main.style.paddingTop = sticky + 'px';
+      } else {
+        header.classList.remove("header--scroll");
+        main.style.paddingTop = '0';
+      }
+    });
+  }
+})();
+'use strict';
+(function() {
   //кнопка открытия - <div><a href="#" class="(классы для стилей) open-modal" data-modal="1" и т.д. (data-modal="2" ...)></div>
 
   //сами модалки <section class="modal modal--closed" data-modal-content="1"> и т.д. (data-modal-сontent="2" (соответствует кнопке открытия))>

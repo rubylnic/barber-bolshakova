@@ -2,7 +2,8 @@
   padding-top: 165px;
   padding-bottom: 315px;
 
-  background: url('../img/main.jpg') 103% 60px no-repeat;
+  background: url('../img/main.jpg') 103% 30% no-repeat;
+  background-size: 50%;
 
   .paragraph {
     &:last-of-type {

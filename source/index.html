@@ -15,11 +15,33 @@
 
 <body>
   <header class="header">
-    <button class="open-modal" data-modal="login">open</button>
+    <div class="container">
+      <a class="header__logo logo" href="/" title="Barber">
+        <svg width="163" height="103">
+        <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+      </svg>
+      </a>
+      <nav class="nav">
+        <a class="nav__link" href="#home" title="Home">Home</a>
+        <a class="nav__link" href="#history" title="History">History</a>
+        <a class="nav__link" href="#service" title="Service">Service</a>
+        <a class="nav__link" href="#gallery" title="Gallery">Gallery</a>
+      </nav>
+      <div class="header__buttons">
+        <button class="header__profile open-modal" type="button" data-modal="login">
+        <img src="img/profile.svg" width="42" height="42" alt="Profile">
+      </button>
+        <button class="header__notifications" type="button">
+        <span class="header__number">2</span>
+        <img src="img/notification.svg" width="29" height="35" alt="Profile">
+      </button>
+        <button class="button open-modal" data-modal="appointment" type="button">Appointment</button>
+      </div>
+    </div>
   </header>
   <main>
     <h1 class="visually-hidden">Barber</h1>
-    <section class="main">
+    <section class="main" id="home">
       <div class="container">
         <div class="main__text">
           <h2 class="main__title title">
@@ -31,7 +53,7 @@
 
       </div>
     </section>
-    <section class="history">
+    <section class="history" id="history">
       <div class="container">
         <div class="history__text">
           <h2 class="history__title title">
@@ -45,39 +67,41 @@
       </div>
 
     </section>
-    <section class="services">
-      <h2 class="title">Services we <span>provide</span></h2>
-      <div class="services__list">
-        <article class="services__item">
-          <span class="services__icon">
+    <section class="services" id="service">
+      <div class="container">
+        <h2 class="title">Services we <span>provide</span></h2>
+        <div class="services__list">
+          <article class="services__item">
+            <span class="services__icon">
             <svg width="65" height="58">
               <use xlink:href="img/sprite_auto.svg#icon-scissors"></use>
             </svg>
           </span>
-          <h3 class="services__subtitle subtitle">Hair Cut</h3>
-          <p class="services__text">long established fact that a reacted by the readable content of hen looking at.</p>
-        </article>
-        <article class="services__item">
-          <span class="services__icon">
+            <h3 class="services__subtitle subtitle">Hair Cut</h3>
+            <p class="services__text">long established fact that a reacted by the readable content of hen looking at.</p>
+          </article>
+          <article class="services__item">
+            <span class="services__icon">
             <svg width="68" height="68">
               <use xlink:href="img/sprite_auto.svg#icon-beard-cut"></use>
             </svg>
           </span>
-          <h3 class="services__subtitle subtitle">Beard Cut</h3>
-          <p class="services__text">long established fact that a reacted by the readable content of hen looking at.</p>
-        </article>
-        <article class="services__item">
-          <span class="services__icon">
+            <h3 class="services__subtitle subtitle">Beard Cut</h3>
+            <p class="services__text">long established fact that a reacted by the readable content of hen looking at.</p>
+          </article>
+          <article class="services__item">
+            <span class="services__icon">
             <svg width="66" height="66">
               <use xlink:href="img/sprite_auto.svg#icon-facial"></use>
             </svg>
           </span>
-          <h3 class="services__subtitle subtitle">Facial pack</h3>
-          <p class="services__text">long established fact that a reacted by the readable content of hen looking at.</p>
-        </article>
+            <h3 class="services__subtitle subtitle">Facial pack</h3>
+            <p class="services__text">long established fact that a reacted by the readable content of hen looking at.</p>
+          </article>
+        </div>
       </div>
     </section>
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <div class="container">
         <h1 class="title">Our <span>gallery</span></h1>
         <div class="gallery__container lightgallery">

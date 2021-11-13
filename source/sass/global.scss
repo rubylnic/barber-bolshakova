@@ -98,7 +98,7 @@ input[type='radio'].visually-hidden {
   margin: 0;
   margin-bottom: 4px;
 
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
 
   font-size: 45px;
   font-weight: 600;
@@ -108,28 +108,54 @@ input[type='radio'].visually-hidden {
 }
 
 .button {
+  position: relative;
+
   display: block;
 
   width: fit-content;
   padding: 23px 41px;
 
-  text-align: c;
+  cursor: pointer;
+  text-align: center;
   text-decoration: none;
-  letter-spacing: 5%;
+  letter-spacing: 0.05px;
 
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
 
   color: $white;
+  border: none;
   border-radius: 20px;
   background-color: $light-blue;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    bottom: -15px;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    border-radius: 20px;
+    background-color: rgba(153, 186, 237, 0.5);
+
+    filter: blur(20px);
+  }
 }
 
 .paragraph {
   margin-bottom: 48px;
 
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
 
   &:last-of-type {
     margin-bottom: 0;
